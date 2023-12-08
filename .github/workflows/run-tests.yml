@@ -16,3 +16,6 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm test
+      - run: npx nyc report --reporter=text-lcov | npx coveralls
+        env:
+          CI: true

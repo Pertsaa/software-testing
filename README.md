@@ -1,5 +1,7 @@
 # Student template
 
+[![Coverage Status](https://coveralls.io/repos/github/Pertsaa/software-testing/badge.svg?branch=main)](https://coveralls.io/github/Pertsaa/software-testing?branch=main)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course

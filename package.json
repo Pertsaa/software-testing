@@ -5,16 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
-    "test:coverage": "c8 --all --exclude src/.internal/**/* --exclude test/**/*.test.js mocha",
-    "ci:coverage": "c8 --all --exclude src/.internal/**/* --exclude test/**/*.test.js --reporter=lcov mocha"
+    "test": "mocha"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "c8": "^8.0.1",
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "sinon": "^17.0.1"
   }
 }

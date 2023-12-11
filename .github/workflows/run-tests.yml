@@ -10,10 +10,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.Js
+        uses: actions/setup-node@v4
         with:
           node-version: 14
-      - run: npm install
-      - run: npm run ci:coverage
-      - uses: coverallsapp/github-action@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests with coverage
+        run: npm run ci:coverage
+
+      - name: Upload report to Coveralls
+        uses: coverallsapp/github-action@v2

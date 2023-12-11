@@ -14,6 +14,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 14
-      - run: npm ci
+      - run: npm install
       - run: npm run ci:coverage
       - uses: coverallsapp/github-action@v2
